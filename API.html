@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahrain Open Data - IT Students</title>
+  <!-- Pico CSS Framework -->
+  <link rel="stylesheet" href="https://unpkg.com/picocss/dist/pico.min.css">
+  <style>
+    body {
+        background-color: #ffffff;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        color: #2c3e50; 
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #table-container {
+        overflow-x: auto; /* Makes the table horizontally scrollable */
+        margin-top: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd; 
+    }
+
+    th {
+        background-color: #3498db; 
+        color: white;
+        font-weight: bold;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2; 
+    }
+
+    tr:hover {
+        background-color: #e1f5fe;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Demographics at the University of Bahrain</h1>
+    <div id="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Semester</th>
+            <th>The Programs</th>
+            <th>Nationality</th>
+            <th>Colleges</th>
+            <th>Number of Students</th>
+          </tr>
+        </thead>
+        <tbody id="data-table">
+          <!-- Data will be populated here  -->
+        </tbody>
+    </div>
+    </section>
+</div>
+
+  <!-- External JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
